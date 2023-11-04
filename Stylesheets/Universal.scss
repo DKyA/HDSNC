@@ -1,0 +1,23 @@
+.TopnavLogo{
+    height: 2.5rem;
+    opacity: .75;
+}
+span.custom-moto{
+    opacity: .70;
+    font-size: 1.15rem;
+    color: navy;
+}
+.bot-logo{
+    padding: 0 20px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+
+    @media screen and (max-width: 768px) {
+        position: relative;
+        padding-bottom: 1rem;
+    }
+}

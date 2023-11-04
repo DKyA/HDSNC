@@ -1,0 +1,66 @@
+@mixin border-radius {
+  border-radius: 1rem 1rem 0 0;
+}
+@mixin border {
+  border: 5px solid #f8f9fa;
+}
+@mixin nullify {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.image {
+  display: block;
+  width: 100%;
+  @include border-radius;
+}
+.row > .col-6-custom {
+  @media screen and (min-width: 992px) {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    width: 50%;
+    position: relative;
+    padding: 0;
+    @include border;
+  }
+}
+.col-12 > .card {
+  @include border-radius;
+}
+.row > .col-12 {
+  @include border;
+  padding: 0;
+}
+.overlay {
+  position: absolute;
+  max-height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #ddd;
+  cursor: default;
+  @include nullify;
+  @include border-radius;
+}
+.spec-selector:hover .overlay {
+  opacity: 0.9;
+}
+.var-text {
+  font-size: 1.1rem;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 1rem;
+  cursor: default;
+  @media screen and(max-width: 768px) {
+    -webkit-transform: initial;
+    -ms-transform: initial;
+    transform: initial;
+    @include nullify;
+  }
+}

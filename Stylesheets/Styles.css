@@ -1,0 +1,25 @@
+.ImgPlaceholder {
+  border: 1px solid #1f5321;
+  border-radius: 1rem;
+}
+
+.Temporary {
+  text-align: center;
+  padding: 160px;
+}
+
+.bg-custom {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.font-custom {
+  font-size: 1.2rem;
+  padding: 1rem;
+  text-align: justify;
+}
+
+.par2 {
+  text-align: right;
+}
+/*# sourceMappingURL=Styles.css.map */

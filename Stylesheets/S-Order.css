@@ -1,0 +1,12 @@
+.custom-center {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+}
+
+.custom-text {
+  text-align: left;
+}
+/*# sourceMappingURL=S-Order.css.map */
